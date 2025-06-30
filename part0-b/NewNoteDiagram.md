@@ -1,4 +1,4 @@
-````mermaid
+```mermaid
 sequenceDiagram;
 
 participant  browser
@@ -13,9 +13,7 @@ activate server
 
 Note right of server: Server etracts notecontents from request and save it.
 
-server->>browser:
-
-HTTP 302 Redirect to /notes
+server->>browser:HTTP 302 Redirect to /notes
     deactivate server
 
 Note right of browser: Browser follows the redirect to reload the notes page
@@ -45,7 +43,6 @@ server-->>browser: Updated JSON data including the new note
 
 Note right of browser: Browser re-renders the note list on the page
 
-
 ```
 
 
@@ -61,4 +58,3 @@ Note right of browser: Browser re-renders the note list on the page
 
 
 
-````
